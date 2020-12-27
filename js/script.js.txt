@@ -1,0 +1,23 @@
+// tombol search
+$(function(){
+   $(".dropdown-item").click(function(){
+      var icon_text = $(this).html();
+      $(".dropdown-toggle").html(icon_text)
+   })
+})
+
+$(function(){
+   $("[data-trigger]").on("click",function(){
+      var target_id = $(this).attr("show");
+      $(target_id).toggleClass("show");
+      $('body').toggleClass("offcanvas-header")
+   })
+})
+
+
+// carousel
+$('.carousel').carousel({
+   interval: 7000,
+   pause: false,
+   touch: false
+})

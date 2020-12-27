@@ -1,0 +1,126 @@
+/* navbar */
+.navbar {
+   position: absolute;
+   background: transparent;
+   width: 100%;
+   z-index: 10;
+   border-bottom: 1px solid #e91e39;
+}
+
+.nav-link {
+   color: rgb(255, 255, 255) !important;
+   margin-right: 5px;
+}
+.nav-link:hover {
+   color: #e91e39 !important;
+}
+
+.phone,.email {
+   margin-right: 5px;
+}
+.phone,.email{
+   color: #e91e39;
+}
+
+/* searchbar */
+.search-bar {
+   position: absolute;
+   z-index: 1;
+   top: 100px;
+   width: 100%;
+}
+.input-group >.form-control:focus{
+   box-shadow: none;
+}
+.input-group >.form-control{
+   margin-right: 5px;
+}
+.btn-outline-danger {
+   border-left: 1px solid #e91e39;
+   border-right: 0;
+   border-top: 0;
+   border-bottom: 0;
+   border-radius: 0;
+}
+
+.btn-outline-danger:hover {
+   background-color: white;
+   color: #8a8a8a;
+}
+.btn-outline-danger:focus {
+   box-shadow: none !important;
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled).active, .btn-outline-danger:not(:disabled):not(.disabled):active, .show>.btn-outline-danger.dropdown-toggle {
+   color: #fff;
+   background-color: #e91e39;
+}
+
+.btn-link{
+   color: #e91e39;
+}
+
+/* carousel */
+.carousel-inner {
+   height: 100vh;
+}
+
+
+.offcanvas-header{
+   display: none;
+}
+
+
+/* responsive */
+@media only screen and (min-width : 320px) and (max-width:480px){
+   
+}
+
+@media only screen and (max-width:768px){
+   .smallscreen{
+      display: none;
+   }
+   form {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+   }
+   form input {
+      font-size: 14px !important;
+   }
+}
+
+@media only screen and (max-width:900px){
+   /* .carousel-inner{
+      height: auto !important;
+   } */
+   form {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+   }
+   .offcanvas-header{
+      display: block;
+   }
+   .navbar-collapse {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      right: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      transition: visibility .2s ease-in-out;
+   }
+   .navbar-collapse .show{
+      visibility: visible;
+      transform: translate(-100%);
+      width: 50%;
+   }
+}
+
+@media only screen and (min-width:1200px){
+   
+}
