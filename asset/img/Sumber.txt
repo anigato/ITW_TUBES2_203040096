@@ -20,4 +20,4 @@ Gambar Slidder
 - slid9.jpg    (https://cdn.vox-cdn.com/thumbor/pQ1CDQAcBFP_gHkSz9SKURZoAdM=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19831031/acastro_200323_1777_gamingMouse_0001.0.jpg)
 
 font
-pop
+Poppins   (goolefont)
