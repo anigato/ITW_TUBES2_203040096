@@ -7,9 +7,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- fontawesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous" />
    <!-- bootstrap -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
    <!-- custom css -->
    <link rel="stylesheet" href="css/style.css">
 
@@ -17,14 +20,14 @@
    <link rel="icon" href="asset/img/icon.png">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#smootscroll">
    <!-- navbar -->
    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger" id="smootscroll">
       <div class="container">
          <a class="navbar-brand" href="#">
             <img src="asset/img/logo.png" width="50" height="50" class="d-inline-block align-top mt-n2 mb-n5" alt=""
                loading="lazy">
-            ANIGATO Official Shop
+               ANIGATO <span class="nav-name">Official Shop</span>
          </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,14 +38,43 @@
                <li class="nav-item">
                   <a class="nav-link active" href="#home">Home</a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item dropdown nav-md-show">
+                  <a class="nav-link dropdown-toggle btn-product" href="#" id="produk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Produk
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="produk">
+                     <a class="dropdown-item nav-product" href="#product">Produk</a>
+                     <a class="dropdown-item nav-product" href="#info">Info Produk</a>
+                  </div>
+               </li>
+               <li class="nav-item nav-sm-show">
                   <a class="nav-link" href="#product">Produk</a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item nav-sm-show">
+                  <a class="nav-link" href="#info">Info Produk</a>
+               </li>
+               <li class="nav-item dropdown nav-md-show">
+                  <a class="nav-link dropdown-toggle btn-other" href="#" id="other" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Lainnya
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="other">
+                     <a class="dropdown-item nav-other" href="#about">Tentang</a>
+                     <a class="dropdown-item nav-other" href="#adds">Berita Terbaru</a>
+                     <a class="dropdown-item nav-other" href="#langganan">Langganan</a>
+                     <!-- <a class="dropdown-item" href="#hubungi">Hubungi</a> -->
+                  </div>
+               </li>
+               <li class="nav-item nav-sm-show">
                   <a class="nav-link" href="#about">Tentang</a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item nav-sm-show">
+                  <a class="nav-link" href="#adds">Berita Terbaru</a>
+               </li>
+               <li class="nav-item nav-sm-show">
                   <a class="nav-link" href="#langganan">Langganan</a>
+               </li>
+               <li class="nav-item nav-lg-show">
+                  <a class="nav-link" href="#hubungi">Hubungi</a>
                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -50,16 +82,14 @@
                   aria-label="Cari Apa?">
                <div class="input-group-append ml-n2">
                   <div class="btn-group">
-                     <button type="button" class="btn btn-outline-light dropdown-toggle border-right-0 rounded-0"
+                     <button type="button" class="btn btn-outline-light dropdown-toggle btn-search border-right-0 rounded-0"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Semua
                      </button>
                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"><i class="fas fa-image"></i> Images</a>
-                        <a class="dropdown-item mr-2" href="#">Another action</a>
-                        <a class="dropdown-item mr-2" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item mr-2" href="#">Separated link</a>
+                        <a class="dropdown-item nav-search mr-2" href="#">Produk</a>
+                        <a class="dropdown-item nav-search mr-2" href="#">Cara Pasang</a>
+                        <a class="dropdown-item nav-search mr-2" href="#">Info Update</a>
                      </div>
                   </div>
                   <div class="input-group-append">
@@ -72,6 +102,7 @@
          </div>
       </div>
    </nav>
+   <!-- akhir navbar -->
 
 
    <!-- Home -->
@@ -95,6 +126,7 @@
          </div>
       </div>
    </section>
+   <!-- akhir home -->
 
 
    <!-- Slidder -->
@@ -146,13 +178,14 @@
          <span class="sr-only">Next</span>
       </a>
    </div>
+   <!-- akhir slidder -->
 
 
    <!-- produk -->
-   <section class="product py-5" id="product">
+   <section class="product py-3" id="product">
       <div class="container">
          <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-6 col-lg-3 col-sm-6 py-2">
                <div class="card" style="width: 100%;">
                   <img src="asset/img/product/caddy.jpg" class="card-img-top" alt="Second HDD Caddy 95mm">
                   <ul class="list-group list-group-flush">
@@ -172,7 +205,7 @@
                   </ul>
                </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-6 col-lg-3 col-sm-6 py-2">
                <div class="card" style="width: 100%;">
                   <img src="asset/img/product/keyboard-da-meca-warior.jpg" class="card-img-top"
                      alt="Keyboard Digital Alliance Meca Warior">
@@ -193,7 +226,7 @@
                   </ul>
                </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-6 col-lg-3 col-sm-6 py-2">
                <div class="card" style="width: 100%;">
                   <img src="asset/img/product/ssd-adata-xpg.jpg" class="card-img-top"
                      alt="SSD NVME Adata XPG XS-8200 Pro 1TB">
@@ -214,7 +247,7 @@
                   </ul>
                </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-6 col-lg-3 col-sm-6 py-2">
                <div class="card" style="width: 100%;">
                   <img src="asset/img/product/ssd-wd-green.jpg" class="card-img-top" alt="SSD WD Green SATA3 1TB SATA3">
                   <ul class="list-group list-group-flush">
@@ -237,6 +270,7 @@
          </div>
       </div>
    </section>
+   <!-- akhir produk -->
 
 
    <!-- info -->
@@ -248,7 +282,7 @@
                   <div class="container">
                      <div class="row">
                         <div class=" col-sm-12 col-lg-6">
-                           <h1>Secepat Kilat</h1>
+                           <h1>Super Fast and Furious</h1>
                            <p>Rasakan Kecepatan menyalakan PC hanya dengan hitungan 5-10 detik dan buka aplikasi secepat
                               kedipan mata</p>
                         </div>
@@ -278,6 +312,7 @@
          </div>
       </div>
    </section>
+   <!-- akhir info -->
 
 
    <!-- about -->
@@ -286,8 +321,9 @@
          <div class="jumbotron about-img">
             <div class="row about-card text-white">
                <div class="col-md-6 about-text">
-                  <h1 class="display-4">Tentang Kami</h1>
-                  <p class="lead">Kami adalah sebuah organisasi yang bergerak di bidang perdagangan alat-alat untuk
+                  <h1 class="display-4">ANIGATO Official Shop</h1>
+                  <p class="lead">ANIGATO Official Shop adalah sebuah organisasi yang bergerak di bidang perdagangan
+                     alat-alat untuk
                      komputer dan laptop. Mulai dari aksesoris hingga yang dapat membuat Komputer dan Laptop lebih
                      powerfull</p>
                   <hr class="my-4">
@@ -325,6 +361,7 @@
          </div>
       </div>
    </section>
+   <!-- akhir about -->
 
 
    <!-- adds -->
@@ -352,9 +389,9 @@
                </div>
                <div class="col-md-6 adds-2">
                   <div class="card-body">
-                     <h2 class="card-title">Setup Gaming Minimalis</h2>
-                     <h4 class="card-text font-weight-light">MEnggunakan Case PC jenis Tower berwarna Orange dan
-                        dilengkapi dengan Water cooling warna Orange juga.</h4>
+                     <h2 class="card-title">Kolaborasi ROG dan Cougar</h2>
+                     <h4 class="card-text font-weight-light">Menghasilkan setup PC gaming berwarna Orange dengan
+                        Headphone, PC dan Kursi Gaming berwarna Orange yang menambah kesan mewah</h4>
                   </div>
                </div>
             </div>
@@ -362,7 +399,7 @@
          <div class="pt-3">
             <div class="jumbotron adds-3">
                <div class="adds-card col-md-7 p-3">
-                  <h1 class="display-4">Layar Ultra Wide</h1>
+                  <h1 class="display-4">Layar Super Ultra Wide</h1>
                   <p class="lead">Kini SAMSUNG meluncurkan monitor gaming QLED terbaru mereka, CHG90. Samsung
                      mengklaim ini adalah monitor gaming terbesar saat ini di industri. Ukurannya mencapai 49 inci.
                      Rasio layarnya mencapai 32:90, sangat lebar, seperti dua monitor 27 inci digabung menjadi satu.</p>
@@ -380,15 +417,14 @@
                </div>
             </div>
          </div>
-      </div>
    </section>
-
+   <!-- akhir adds -->
 
    <!-- langganan -->
    <section class="langganan" id="langganan">
       <div class="container">
-         <div class="row my-3">
-            <div class="col-md-7">
+         <div class="row">
+            <div class="col-md-7 my-3">
                <div class="card">
                   <div class="card-header">
                      <h1>Berlangganan <small>newsletter Kami</small></h1>
@@ -418,7 +454,7 @@
                                  <input type="text" class="form-control" placeholder="Nama Depan">
                               </div>
                               <div class="col-md-3">
-                                 <input type="text" class="form-control" placeholder="Nama Belakang">
+                                 <input type="text" class="form-control" placeholder="Nomor Telp">
                               </div>
                               <div class="col-md-6">
                                  <input type="email" class="form-control" placeholder="Alamat Email">
@@ -440,7 +476,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 my-3">
                <div class="card bg-langganan text-white">
                   <div class="card-header">
                      <h1>Nikmati Layanan <small>Kami</small></h1>
@@ -463,6 +499,7 @@
          </div>
       </div>
    </section>
+   <!-- akhir langganan -->
 
 
    <!-- hubungi -->
@@ -488,42 +525,43 @@
             <div class="col-md-3 col-sm-6 text-white">
                <h5>Untuk Konsumen</h5>
                <ul class="list-unstyled">
-                  <li><a class="text-white" href="#">Produk</a></li>
-                  <li><a class="text-white" href="#">Promo</a></li>
-                  <li><a class="text-white" href="#">Dukungan</a></li>
-                  <li><a class="text-white" href="#">Garansi</a></li>
+                  <li><a href="#">Produk</a></li>
+                  <li><a href="#">Promo</a></li>
+                  <li><a href="#">Dukungan</a></li>
+                  <li><a href="#">Garansi</a></li>
                </ul>
             </div>
             <div class="col-md-3 col-sm-6">
                <h5>Untuk Re-Seller</h5>
                <ul class="list-unstyled">
-                  <li><a class="text-white" href="#">Solusi Penjualan</a></li>
-                  <li><a class="text-white" href="#">Kualitas Produk</a></li>
-                  <li><a class="text-white" href="#">Ketahanan</a></li>
-                  <li><a class="text-white" href="#">Reseller Reward Programs</a></li>
+                  <li><a href="#">Solusi Penjualan</a></li>
+                  <li><a href="#">Kualitas Produk</a></li>
+                  <li><a href="#">Ketahanan</a></li>
+                  <li><a href="#">Reseller Reward Programs</a></li>
                </ul>
             </div>
             <div class="col-md-3 col-sm-6">
                <h5>Tentang ANIGATO</h5>
                <ul class="list-unstyled">
-                  <li><a class="text-white" href="#">Pusat Berita</a></li>
-                  <li><a class="text-white" href="#">Karier</a></li>
-                  <li><a class="text-white" href="#">Keberlanjutan</a></li>
-                  <li><a class="text-white" href="#">Riset</a></li>
-                  <li><a class="text-white" href="#">Jenaring Sosial</a></li>
+                  <li><a href="#">Pusat Berita</a></li>
+                  <li><a href="#">Karier</a></li>
+                  <li><a href="#">Keberlanjutan</a></li>
+                  <li><a href="#">Riset</a></li>
+                  <li><a href="#">Jenaring Sosial</a></li>
                </ul>
             </div>
             <div class="col-md-3 col-sm-6">
                <h5>ANIGATO</h5>
                <ul class="list-unstyled">
-                  <li><a class="text-white" href="#">Daftar Produk</a></li>
-                  <li><a class="text-white" href="#">Masuk / Login</a></li>
-                  <li><a class="text-white" href="#">Daftar / Register</a></li>
+                  <li><a href="#">Daftar Produk</a></li>
+                  <li><a href="#">Masuk / Login</a></li>
+                  <li><a href="#">Daftar / Register</a></li>
                </ul>
             </div>
          </div>
       </div>
    </section>
+   <!-- akhir hubungi -->
 
 
    <!-- footer -->
@@ -573,14 +611,21 @@
          </div>
       </div>
    </footer>
+   <!-- akhir footer -->
 
 
    <!-- Jquery -->
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
    <!-- Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
    <!-- Bootstrap -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"></script>
    <!-- custom js -->
    <script src="js/script.js"></script>
 

@@ -1,15 +1,20 @@
+/* inport font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,500&display=swap');
+
+
+
 /* smooth scroll */
 html {
    scroll-behavior: smooth;
 }
 
-a {
-   text-decoration: none;
-}
+
 /* body */
 body {
    background-color: rgb(201, 201, 201);
+   font-family: "Poppins" !important;
 }
+
 
 
 /* home */
@@ -105,6 +110,12 @@ body {
 }
 
 
+
+
+
+
+
+
 /* langganan */
 .bg-langganan{
    /* background-color: rgb(252, 160, 160); */
@@ -113,8 +124,29 @@ body {
 
 
 /* hubungi */
-.hubungi {
+/* .hubungi- {
    background-image: linear-gradient(rgb(62, 126, 48),rgb(49, 158, 39));
+} */
+
+.hubungi {
+   /* The image used */
+   background-image: url("../asset/img/slider/slid1.jpg");
+ 
+   /* Set a specific height */
+   /* width: 100%; */
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+.hubungi a {
+   text-decoration: none;
+   color: white;
+}
+.hubungi a:hover {
+   color: rgba(255,255,255,.5) !important;
 }
 
 
@@ -150,5 +182,38 @@ footer .fab {
    }
    .slid-3 {
       left: 50%;
+   }
+}
+@media (min-width: 1200px){
+   .nav-lg-show {
+      display: inline-block;
+   }
+   .nav-sm-show {
+      display: none;
+   }
+}
+
+
+@media (max-width: 1200px){
+   .nav-lg-show {
+      display: none;
+   }
+   .nav-sm-show {
+      display: none;
+   }
+   .nav-name {
+      display: none;
+   }
+}
+
+@media (max-width: 991px){
+   .nav-sm-show {
+      display: inline-block;
+   }
+   .nav-md-show {
+      display: none;
+   }
+   .nav-name {
+      display: inline-block;
    }
 }
